@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: beige;
+}
+
+
+.flex-container {
+    border: 1px solid #837d7d;
+    background: #ccc;
+    /* Añade un borde al contenedor flex para visualizar su área */
+    padding: 20px;
+    display: flex;
+    /* Establece el contenedor como un flexbox, permitiendo que sus elementos hijos se distribuyan en una sola línea o varias, y se alineen fácilmente usando las propiedades de flexbox */
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.caja {
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px
+}
+
+.c1 {
+    background: #ff9999;
+    order: 1;
+    flex-grow: 5;
+}
+
+.c2 {
+    background: #99ff99;
+    order: 2;
+    flex-grow: 1;
+}
+
+.c3 {
+    background: #9999ff;
+    order: 4;
+    flex-grow: 1;
+}
+
+.c4 {
+    background: #ffff99;
+    order: 3;
+    flex-grow: 1;
+}

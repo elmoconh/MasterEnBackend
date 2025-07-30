@@ -1,0 +1,39 @@
+/*
+BEM = Bloque elemento modificador
+Bloque: es un componente independiente
+Elemento: es una parte de un bloque que no tiene sentido por sí mismo
+Modificador: es una variación de un bloque o elemento
+Es una forma para nombrar clases de CSS de forma que se entienda su relación y jerarquía.
+Ejemplo:
+<div class="bloque">
+    <div class="bloque__elemento bloque__elemento--modificador"></div>
+</div>
+
+Se usa siempre CLASS no ID.
+Id= aplicador de funcionalidd (JavaScript);
+Clase= aplicador de estilo (CSS).
+*/
+
+body{background: salmon;}
+
+.cards{
+    width: 400px;
+    margin: 0px;
+    border: 1xp solid gray;
+    margin:10px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    border-radius: 10px 5px;
+    padding: 10px;
+}
+
+.cards .card{
+font-family: 'Courier New', Courier, monospace;
+padding: 10px;
+margin: 5px;
+background-color: lightskyblue;
+}
+
+.cards .card h2{
+font-weight: bold;
+font-size: 44px;
+}

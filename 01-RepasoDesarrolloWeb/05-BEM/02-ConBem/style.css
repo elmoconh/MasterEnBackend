@@ -1,0 +1,46 @@
+/* style.css */
+
+/* --- Bloque: cards --- */
+.cards {
+    display: flex; /* O grid, dependiendo del diseño deseado */
+    gap: 20px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas salten a la siguiente línea */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    padding: 20px;
+}
+
+/* --- Bloque: cards_card (anidado dentro de cards, pero sigue siendo un bloque distinto) --- */
+.cards_card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 250px; /* Ancho fijo de ejemplo para las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empuja el enlace hacia abajo */
+}
+
+/* --- Elementos de card --- */
+.card__title {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card__content {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    flex-grow: 1; /* Permite que el contenido ocupe el espacio disponible */
+}
+
+.card__link {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
