@@ -32,4 +32,11 @@ echo "<p>Nombre: " . $nombre . "</p>";
 }else{
     echo "<p>No se ha enviado el nombre</p>";
 }
+echo mostrarNombre($nombre);
+
+//Funciones
+function mostrarNombre($nombre){
+    $texto = "<h3>El nombre es: " . $nombre . "</h3>";
+    return $texto;
+}
 ?>
